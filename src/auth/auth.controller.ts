@@ -12,6 +12,7 @@ import {
 import { AuthService } from './auth.service';
 import { LocalAuthGuard } from './local-auth.guard';
 import { JwtAuthGuard } from './jwt-auth.guard';
+import { GoogleAuthGuard } from './google-auth.guard';
 
 @Controller('auth')
 export class AuthController {
@@ -27,5 +28,15 @@ export class AuthController {
   @Get('profile')
   getProfile(@Request() req) {
     return req.user;
+  }
+
+  @UseGuards(GoogleAuthGuard)
+  @Get('google')
+  async googleAuth(@Request() req) {}
+
+  @UseGuards(GoogleAuthGuard)
+  @Get('google/redirect')
+  googleAuthRedirect(@Request() req) {
+    return this.authService.googleLogin(req.user)
   }
 }
