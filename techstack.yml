@@ -2,7 +2,7 @@ repo_name: adhika16/nestjs-my-crud-app
 report_id: 1302bc5943e1603dbecd6a1809c02a62
 version: 0.1
 repo_type: Public
-timestamp: '2024-01-05T08:36:15+00:00'
+timestamp: '2024-02-29T18:51:51+00:00'
 requested_by: adhika16
 provider: github
 branch: master
@@ -151,7 +151,7 @@ tools:
   last_updated_by: Adhika P
   last_updated_on: 2023-11-29 16:09:53.000000000 Z
 - name: Prettier
-  description: 'Prettier is an opinionated code formatter. '
+  description: Prettier is an opinionated code formatter.
   website_url: https://prettier.io/
   version: 3.1.0
   license: MIT
@@ -165,7 +165,7 @@ tools:
   last_updated_by: Adhika P
   last_updated_on: 2023-11-29 16:09:53.000000000 Z
 - name: SuperTest
-  description: 'A library for testing node.js HTTP servers '
+  description: A library for testing node.js HTTP servers
   website_url: https://www.npmjs.com/package/supertest
   version: 6.3.3
   license: MIT
